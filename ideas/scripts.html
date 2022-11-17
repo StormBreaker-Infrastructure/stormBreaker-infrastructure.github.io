@@ -5,6 +5,34 @@
         <title>StormBreaker Project</title>
     </head>
     <body>
-        <h1>StormBreakerCI</h1><br>
+        <h1>StormBreakerCI</h1>
+        <h3>Mentor :- Saalim and Giovanni</h3><br>
+
+        The CI scripts comprises of a master build script that takes in device name as the argument and triggers build
+        from our main device organisation (https://github.com/stormbreaker-project).
+        The script clones the device kernel and builds the config (assuming you are familiar to how the Linux Kernel is built).
+        The script selects Android Clang 10.0 as default version and works only for Linux Kernel version 3.18.
+        We work only with Long Term Support type Kernels.
+
+        <h2>Ideas</h2>
+        <ul>
+            <li>
+                The build script usually needs an argument everytime in order to execute and for multiple executions,
+                it is required to run the script multiple times for every execution.
+                The idea here is to make a master generic script that will contain the required functions that takes in variables as arguments,
+                and trigger the builds.
+                The is referenced at https://github.com/StormBreaker-Infrastructure/scripts/issues/1
+            </li>
+            <li>
+                Linux Kernels are able to support different compilers whether it be GCC, LLVM, Google Clang, etc.
+                The idea is to add the support for the kernel to be able to build with a different compiler we want.
+                The issue is referenced at .
+            </li>
+            <li>
+                Linux Kernels are able to support different compilers whether it be GCC, LLVM, Google Clang, etc.
+                The idea is to add the support for the kernel to be able to build with a different compiler we want.
+                The issue is referenced at https://github.com/StormBreaker-Infrastructure/scripts/issues/5.
+            </li>
+        </ul>
     </body>
 </html>
